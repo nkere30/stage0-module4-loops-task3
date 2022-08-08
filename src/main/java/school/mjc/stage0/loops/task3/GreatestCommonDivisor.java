@@ -2,14 +2,14 @@ package school.mjc.stage0.loops.task3;
 
 public class GreatestCommonDivisor {
     public static void printGCD(int first, int second) {
-        int lowerNumber = 0;
+        int higherNumber = 0;
         if(first > second) {
-            lowerNumber = second;
+            higherNumber = first;
         } else {
-            lowerNumber = first;
+            higherNumber = second;
         }
         int gcd = 0;
-        for(int i = 1; i <= lowerNumber; i++) {
+        for(int i = 1; i <= higherNumber; i++) {
             if(first % i == 0 && second % i == 0) {
                 gcd = i;
             }
@@ -18,6 +18,6 @@ public class GreatestCommonDivisor {
     }
 
     public static void main(String[] args) {
-        printGCD(1, 2);
+        printGCD(0, 0);
     }
 }

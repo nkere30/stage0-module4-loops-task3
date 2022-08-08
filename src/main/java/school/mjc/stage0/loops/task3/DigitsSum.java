@@ -8,10 +8,9 @@ public class DigitsSum {
             result += t%10;
             t /= 10;
         }
+        if(result < 0) {
+            result = (-1) * result;
+        }
         System.out.println(result);
-    }
-
-    public static void main(String[] args) {
-        printDigitsSum(12348);
     }
 }
